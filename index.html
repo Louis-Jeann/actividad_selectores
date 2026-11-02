@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyecto de Selectores CSS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header id="encabezado">
+
+        <h1>Aprendiendo Selectores CSS</h1>
+
+        <p>Conoce y practica los diferentes selectores de CSS.</p>
+
+    </header>
+
+    <!-- MENU DE NAVEGACION -->
+    <nav class="menu">
+
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+
+    </nav>
+
+    <!-- PRESENTACION -->
+    <div id="inicio" class="presentacion">
+
+        <h2>Bienvenidos a mi proyecto</h2>
+
+        <p>
+            En esta página aprenderemos a utilizar los principales
+            selectores CSS mediante ejemplos prácticos.
+        </p>
+
+    </div>
+
+    <!-- PRACTICAS -->
+    <div id="practicas">
+
+        <h2>Ejemplos de selectores CSS</h2>
+
+        <!-- 1. UNIVERSAL -->
+        <div class="caja">
+
+            <h3>1. Selector universal (*)</h3>
+
+            <p>
+                Permite aplicar estilos generales a todos los
+                elementos de una página.
+            </p>
+
+        </div>
+
+        <!-- 2. ETIQUETA -->
+        <div class="caja">
+
+            <h3>2. Selector de etiqueta</h3>
+
+            <p>Este es el primer párrafo.</p>
+            <p>Este es el segundo párrafo.</p>
+            <p>Este es el tercer párrafo.</p>
+
+        </div>
+
+        <!-- 3. DESCENDENTE -->
+        <div class="caja descendiente">
+
+            <h3>3. Selector descendente</h3>
+
+            <p>Este texto está dentro del contenedor.</p>
+
+            <div>
+                <p>Este texto está dentro de otro contenedor.</p>
+            </div>
+
+        </div>
+
+        <!-- 4. CLASE -->
+        <div class="caja">
+
+            <h3>4. Selector por clase</h3>
+
+            <p>Selecciona varios elementos utilizando una misma clase.</p>
+
+            <p class="rojo">Color rojo</p>
+            <p class="azul">Color azul</p>
+            <p class="verde">Color verde</p>
+
+        </div>
+
+        <!-- 5. ID -->
+        <div class="caja">
+
+            <h3>5. Selector por ID</h3>
+
+            <p id="texto-especial">
+                Este texto tiene un identificador único.
+            </p>
+
+        </div>
+
+        <!-- 6. COMBINADOS -->
+        <div class="caja combinado">
+
+            <h3>6. Selectores combinados</h3>
+
+            <p>Primer elemento seleccionado.</p>
+            <h4>Segundo elemento seleccionado.</h4>
+
+        </div>
+
+        <!-- 7. HIJO DIRECTO -->
+        <div class="caja hijo">
+
+            <h3>7. Selector hijo directo</h3>
+
+            <p>Primer párrafo directo.</p>
+            <p>Segundo párrafo directo.</p>
+
+            <div>
+                <p>Este párrafo está dentro de otro div.</p>
+            </div>
+
+        </div>
+
+        <!-- 8. ADYACENTE -->
+        <div class="caja adyacente">
+
+            <h3>8. Selector adyacente</h3>
+
+            <p>Este párrafo está inmediatamente después del título.</p>
+
+            <p>Este es el segundo párrafo.</p>
+
+        </div>
+
+        <!-- 9. HERMANOS GENERALES -->
+        <div class="caja hermanos">
+
+            <h3>9. Selector general de hermanos</h3>
+
+            <p>Primer párrafo.</p>
+            <p>Segundo párrafo.</p>
+            <p>Tercer párrafo.</p>
+
+        </div>
+
+        <!-- 10. ATRIBUTO -->
+        <div class="caja atributos">
+
+            <h3>10. Selector por atributo</h3>
+
+            <p>Campo para escribir un nombre:</p>
+
+            <input type="text" placeholder="Escribe tu nombre">
+
+            <p>Campo para escribir una edad:</p>
+
+            <input type="number" placeholder="Escribe tu edad">
+
+        </div>
+
+    </div>
+
+    <!-- FORMULARIO -->
+    <div id="formulario" class="formulario">
+
+        <h2>Pequeña práctica</h2>
+
+        <p>Selecciona tu color favorito:</p>
+
+        <select>
+            <option>Rojo</option>
+            <option>Azul</option>
+            <option>Verde</option>
+            <option>Amarillo</option>
+        </select>
+
+        <p>Selecciona un número:</p>
+
+        <input type="number" min="1" max="10">
+
+    </div>
+    <!-- PIE DE PAGINA -->
+    <footer>
+
+        <p>Practica Selectores CSS</p>
+
+    </footer>
+
+</body>
+</html>

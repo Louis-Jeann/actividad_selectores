@@ -1,0 +1,159 @@
+
+/* 1. SELECTOR UNIVERSAL (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. SELECTOR DE ETIQUETA */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* 3. SELECTOR DESCENDENTE */
+.descendiente p {
+    color: blue;
+}
+
+/* 4. SELECTOR POR CLASE */
+.menu {
+    background-color: #2563eb;
+    padding: 18px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.rojo {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: green;
+}
+
+/* 5. SELECTOR POR ID */
+#encabezado {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+#texto-especial {
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 6. SELECTORES COMBINADOS */
+.combinado p,
+.combinado h4 {
+    color: #2563eb;
+    background-color: #dbeafe;
+    padding: 10px;
+}
+
+/* 7. SELECTOR HIJO DIRECTO */
+.hijo > p {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* 8. SELECTOR ADYACENTE */
+.adyacente h3 + p {
+    color: red;
+    font-weight: bold;
+}
+
+/* 9. SELECTOR GENERAL DE HERMANOS */
+.hermanos h3 ~ p {
+    background-color: #fef3c7;
+    padding: 10px;
+}
+
+/* 10. SELECTOR POR ATRIBUTO */
+.atributos input[type="text"] {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.atributos input[type="number"] {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* ESTILOS GENERALES DE LA PAGINA */
+#encabezado h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.presentacion,
+.conclusion,
+.formulario {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    width: 85%;
+    border-radius: 10px;
+}
+
+#practicas {
+    width: 85%;
+    margin: 30px auto;
+}
+
+#practicas h2 {
+    color: #1e40af;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caja {
+    background-color: white;
+    padding: 20px;
+    margin: 18px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+}
+
+.caja h3 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO */
+.formulario select,
+.formulario input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
